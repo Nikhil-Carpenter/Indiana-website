@@ -1,0 +1,346 @@
+/* Css imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* my fonts */
+
+@font-face {
+    font-family: kaushan;
+    src: url("../media/fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+
+/* Global css */
+
+.container{
+    width: 80%;
+    min-height: 80px;
+    /* background-color: red; */
+    display: flex;
+}
+.section_heading{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
+    font-family: poppins;
+    color: #dbdbdb;
+    user-select: none;
+}
+
+
+/* css for header */
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.header_container{
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15%;
+    height: 80px;
+    font-size: 34px;
+    font-family: kaushan;
+    user-select: none;
+    color: white;
+    cursor: pointer;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    /* width: 40%; */
+    height: 80px;
+    /* background-color: blue; */
+}
+.nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav > ul > li{
+    text-align: center;
+    color: #fff;
+    padding: 0px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav > ul >li:hover{
+    color: #493B2A;
+}
+
+
+/* css for banner */
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0,0,0,.4);
+    background-image: url("../media/img/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner_content{
+    width: 50%;
+    /* background-color: #000; */
+    height: 100px;
+    margin-top: 100px;
+
+}
+
+.search{
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+}
+
+.search-input{
+    width: 90%;
+    height: 40px;
+    text-indent: 20px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.search_icon{
+    width: 10%;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.search_icon:hover{
+    background-color: #493B2A;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+/* Css for places */
+
+.places{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #493B2A;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.places_container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.place{
+    width: 24%;
+    height: 350px;
+    /* background-color: yellow; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,.175);
+    background-blend-mode: saturation;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.place:nth-child(1){
+    background-image: url("../media/img/place1.jpeg");
+  
+}
+.place:nth-child(2){
+    background-image: url("../media/img/place3.jpeg");
+   
+}
+.place:nth-child(3){
+    background-image: url("../media/img/place2.jpeg");
+  
+}
+.place:nth-child(4){
+    background-image: url("../media/img/place4.jpeg");
+    
+}
+.place:nth-child(5){
+    background-image: url("../media/img/place5.jpeg");
+    
+}
+.place:nth-child(6){
+    background-image: url("../media/img/place8.jpeg");
+    
+}
+.place:nth-child(7){
+    background-image: url("../media/img/place7.jpeg");
+    
+}
+.place:nth-child(8){
+    background-image: url("../media/img/place6.jpeg");
+    
+}
+
+.place:hover > .card_details{
+    transform: translateY(0px);
+}
+
+.card_details{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(350px);
+    transition: 0.5s;
+}
+
+.card_title{
+    font-family: poppins;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    position: absolute;
+    top: 10px;
+}
+
+.card_btn{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* css for Packges */
+
+.packages{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #efefd0c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    align-items: center;
+}
+.packages > h1{
+    color: #493B2A;
+}
+
+.packages_container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.package{
+    width: 19%;
+    min-height: 360px;
+    background-color: #493b2a;
+    font-family: poppins;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+}
+
+.package:hover .package_img > img{
+    transform: scale(1.1);
+}
+
+.package_img{
+    width: 100%;
+    height: 200px;
+    /* background-color: blue ; */
+    overflow: hidden;
+}
+
+.package_img > img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.package_detail{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+}
+
+.package_title{
+    font-size: 16px;
+    color: #fff;
+}
+.price{
+    font-weight: bold;
+    font-size: 12px;
+}
+.ratings{
+    width: 115px;
+    height: 20px;
+    /* background-color: red; */
+    position: relative;
+}
+.gray_star{
+    width: 115px;
+    height: 20px; 
+    display: flex;
+    color: gray;
+    font-size: 16px;
+    /* background-color: green; */
+    position: absolute;
+
+}
+.yellow_star{
+    /* background-color: blue ; */
+    width: 70%;
+    color: gold;
+    display: flex;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    
+}
