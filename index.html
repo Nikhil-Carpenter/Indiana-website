@@ -11,17 +11,17 @@
 <body>
     <!-- HEADER -->
 
-    <header class="header">
+    <header class="header" id="header">
 
         <div class="container header_container">
 
-            <div class="logo">
+            <div class="logo" id="logo">
                 <p>Indiana</p>
             </div>
 
             <nav class="nav">
 
-                <ul>
+                <ul id="nav">
                     <li>Home</li>
                     <li>Places</li>
                     <li>Packages</li>
@@ -39,7 +39,7 @@
 
     <!-- BANNER -->
     
-    <section class="banner">
+    <section class="banner" id="banner">
 
         <div class="banner_content">
 
@@ -59,7 +59,7 @@
 
     <!-- PLACES -->
 
-    <section class="places">
+    <section class="places" id="places">
 
         <h1 class="section_heading">Places to Visit</h1>
 
@@ -95,7 +95,7 @@
 
 
 
-            <div class="place">
+            <!-- <div class="place">
                 <div class="card_details">
                     <h2 class="card_title">Pyramids</h2>
                     <button class="card_btn">View more</button>
@@ -122,14 +122,30 @@
                     <button class="card_btn">View more</button>
                 </div>
             </div>
-
+ -->
 
 
         </div>
 
     </section>
 
-    <section class="packages">
+     <!-- Destination -->
+
+     <section class="destinations" id="destinations">
+        <video  controls autoplay class="vid" id="vid" >
+            <source  src="./media/video/pexels-german-korb-5644053.mp4"/>
+        </video>
+        <div class="vid_overlay">
+            <p >Beautiful Destinations</p>
+        </div>
+
+    </section>
+
+
+
+    <!-- Packages -->
+
+    <section class="packages" id="packages">
 
         <h1 class="section_heading">Top Rated packages</h1>
 
@@ -314,6 +330,173 @@
 
     </section>
 
+   <!-- Gallery start -->
+
+   <section class="gallery_section" id="gallery">
+
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+    <div class="gallery"></div>
+
+
+   </section>
+
+   <!-- Gallery end  -->
+
+<!-- Testimonial section -->
+
+   <section class="testimonials" id="testimonials">
+
+    <h1 class="section_heading">Our Testimonials</h1>
+       <div class="container testimonials-container">
+           <div class="user_picture">
+               <img src="./media/img/user1.jpg" >
+           </div>
+           <div class="testimonial">
+               <div class="testimonial_title">Jhon Doe</div>
+                <p>A very emotional experience. Thank you Iris Hami for leading this successful trip. The hotel, the food, the guide and the traveling and trip schedule including visiting significant places in Bahrain made this trip an experience which was perfectly orchestrated and adjusted according to limits and changes.
+                    Thank you for all your efforts.</p>
+                <div class="user_gallery">
+                    <div class="gallery_img">
+                        <img src="./media/img/usergallery1.jpeg" >
+                    </div>
+                    <div class="gallery_img">
+                        <img src="./media/img/usergallery2.jpeg" >
+                    </div>
+                    <div class="gallery_img">
+                        <img src="./media/img/usergallery3.jpeg" >
+                    </div>
+                    <div class="gallery_img">
+                        <img src="./media/img/usergallery4.jpeg" >
+                    </div>
+
+                </div>
+           </div>
+       </div>
+
+   </section>
+
+   <section class="contact">
+    <h1 class="contact_heading">Travel your dreams</h1>
+   <div class="contact_form">
+        <form action="" class="form">
+            <input class="form_input" type="text" placeholder="Your name">
+            <input class="form_input" type="email" placeholder="Enter your email">
+            <input class="form_input" type="text" placeholder="Your Message and Destination info" id="message"></input>
+            <input class="contact_btn" type="submit" value="Get in touch">
+
+        </form>
+    </div>    
+   </section>
+
+
+   <!-- Blog section -->
+
+   <section class="blog_section" id="blogs">
+       <h1 class="section_heading">Latest Blogs</h1>
+       <div class="container blog_container">
+
+        <div class="blog_card">
+            <div class="blog_img">
+                <img src="./media/img/blog1.jpeg" alt="">
+            </div>
+            <div class="blog_content">
+                <div class="blog_title">Searching for meaning in traveling</div>
+                <p>by <span class="author">Rachit vyas,</span> 12/2/22 </p>
+                <p>Travelling seems to be the buzzword on everybody's lips these days. ... I call it The Joy of Travel. In other words</p>
+
+                <button class="blog_btn">Read more</button>
+            </div>
+        </div>
+        <div class="blog_card">
+            <div class="blog_img">
+                <img src="./media/img/blog2.jpeg" alt="">
+            </div>
+            <div class="blog_content">
+                <div class="blog_title">How to manage travel on a Budget</div>
+                <p>by <span class="author">Deno james,</span> 12/2/22 </p>
+                <p>Travelling is such a wonderful opportunity, and being able to travel on a budget makes it more accessible. </p>
+
+                <button class="blog_btn">Read more</button>
+            </div>
+        </div>
+        <div class="blog_card">
+            <div class="blog_img">
+                <img src="./media/img/blog3.jpeg" alt="">
+            </div>
+            <div class="blog_content">
+                <div class="blog_title">Make the Most of Your Holidays.</div>
+                <p>by <span class="author">bill fost,</span> 12/2/22 </p>
+                <p>Oh, sweet vacation. That time when you can escape the stress of your everyday life and get some much-needed .</p>
+
+                <button class="blog_btn">Read more</button>
+            </div>
+        </div>
+
+       </div>
+
+   </section>
+
+
+
+   <footer class="footer">
+
+    <div class="container footer_container">
+        <div class="footer_sections">
+            <ul>
+                <li class="list_title">Quick Links</li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="footer_sections">
+            <ul>
+                <li class="list_title">Contact info</li>
+                <li><a href="">+1 645-897-453</a></li>
+                <li><a href="">25,business Avenu</a></li>
+                <li><a href="">San Jose CA</a></li>
+                <li><a href="">Travelindiana@gmail.com</a></li>
+            
+            </ul>
+        </div>
+        <div class="footer_sections">
+            <ul>
+                <li class="list_title">Social-Links</li>
+            </ul>
+            <div class="social_icons">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-twitter fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </div>
+        </div>
+        <div class="footer_sections map">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15213.510037666741!2d-122.26438996307914!3d37.804242467216454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f874941b0d3c5%3A0x34b677190ebf8f3a!2sBonsai%20Garden!5e0!3m2!1sen!2sin!4v1644742064976!5m2!1sen!2sin" width="100%" height="250px" style="border:0;"></iframe>
+           
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+   </footer>
 
 
 
@@ -322,6 +505,40 @@
 
 
 
+
+
+   <!-- Script section starts -->
+
+   <script>
+       window.onscroll = function(){
+
+           if (window.pageYOffset >=200) {
+
+            document.getElementById("header").style.backgroundColor = "#493b2a";
+            document.getElementById("header").style.height = "80px";
+            document.getElementById("logo").style.color = "orange";
+            document.getElementById("nav").style.color = "white";
+            document.getElementById("header").style.borderBottomWidth = "1px";
+            document.getElementById("header").style.borderBottomStyle = "solid";
+            // document.getElementById("header").style.boxShadow = "0px 0px 10px orange";
+
+            document.getElementById("header").style.borderBottomColor = "white";
+
+            
+        }else{
+            document.getElementById("header").style.backgroundColor = "transparent";
+            document.getElementById("header").style.height = "90px";
+            document.getElementById("logo").style.color = "white";
+            document.getElementById("nav").style.color = "white";
+            document.getElementById("header").style.borderBottomColor = "transparent";
+
+           }
+
+      if (window.pageYOffset >= 500) {
+          document.getElementById("vid").play();
+      }
+       }
+   </script>
 
 
 </body>
