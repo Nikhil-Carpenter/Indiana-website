@@ -17,9 +17,10 @@
 
             <div class="logo" id="logo">
                 <p>Indiana</p>
+                <i class="fa-solid fa-bars mobile" id="btn"></i>
             </div>
 
-            <nav class="nav">
+            <nav class="nav" >
 
                 <ul id="nav">
                     <li>Home</li>
@@ -383,6 +384,9 @@
 
    </section>
 
+
+   <!-- Contact section -->
+
    <section class="contact">
     <h1 class="contact_heading">Travel your dreams</h1>
    <div class="contact_form">
@@ -511,7 +515,7 @@
 
    <script>
        window.onscroll = function(){
-
+        
            if (window.pageYOffset >=200) {
 
             document.getElementById("header").style.backgroundColor = "#493b2a";
@@ -520,7 +524,6 @@
             document.getElementById("nav").style.color = "white";
             document.getElementById("header").style.borderBottomWidth = "1px";
             document.getElementById("header").style.borderBottomStyle = "solid";
-            // document.getElementById("header").style.boxShadow = "0px 0px 10px orange";
 
             document.getElementById("header").style.borderBottomColor = "white";
 
@@ -538,6 +541,26 @@
           document.getElementById("vid").play();
       }
        }
+
+       let btn = document.getElementById("btn");
+        let menu = document.getElementById("nav");
+
+        let menuHeight = false;
+
+        btn.addEventListener("click",function(){
+
+            if(menuHeight === false){
+            menu.style.height = "420px";
+            btn.classList.remove("fa-bars");
+            btn.classList.add("fa-xmark");
+            menuHeight = true;
+            }else {
+                 menu.style.height = "0px";
+                btn.classList.add("fa-bars"); 
+                btn.classList.remove("fa-xmark");
+                menuHeight=false;
+            }
+        })   
    </script>
 
 
