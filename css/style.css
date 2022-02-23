@@ -770,6 +770,9 @@ border: none;
  .mobile{
      display: block;
  }
+ .desktop{
+     display: none;
+ }
 
  .logo{
      width: 100%;
@@ -898,7 +901,7 @@ border: none;
     width: 100%;
     height: auto;
     /* background-color: gray; */
-    background-position-y: -25px;
+    background-position-y: -0px;
     row-gap: 15px;
     /* background-position-x: -225px; */
     justify-content: flex-start;
@@ -937,7 +940,7 @@ border: none;
     overflow-x: scroll;
     scroll-behavior: smooth;
     height: auto;
-    column-gap: 5px;
+    column-gap: 10px;
     background-color: #efefd0c4;
 }
 
@@ -949,7 +952,7 @@ border: none;
 
 .gallery_section::-webkit-scrollbar{
 
-height: 1px;
+height: 0px;
 background-color: orange;
 }
 
@@ -990,7 +993,120 @@ background-color: orange;
     height: -webkit-fill-available;
 }
 
+}
 
+/* ################################################################## */
+
+
+@media (min-width:501px) and (max-width:768px) {
+
+
+    .header_container{
+        width: 100%;
+        background-color: rgb(73 59 42);
+        flex-direction: column;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+   
+    .logo{
+        width: 100%;
+        font-size: 28px;
+        padding:  20px;
+    }
+    .nav{
+        width: 100%;
+        background-color: rgb(73 59 42);
+           margin-top: -10px;
+       
+        /* flex-direction: column; */
+    }
+    .nav >ul {
+        width: 100%;
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+    }
+   .nav >ul >li {
+       text-align: center;
+       height: 50px;
+       width: 100%;
+       line-height: 50px;
+       font-size: 15px;
+   
+   }
+   
+/* css for places */
+
+.place{
+    width: 49%;
+}
+
+
+
+
+
+
+/* css for packages */
+
+.packages_container{
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.package{
+    width: 49%;
+}
+
+/* css for gallery */
+
+
+.gallery_section{
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.gallery{
+    width: 49%;
+
+}
+
+/* css for contact */
+
+.contact{
+    background-position-y: -50px ;
+}
+
+/* css for blog */
+
+.blog_container{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.blog_card{
+    width: 47%;
+}
+
+/* css for testimonials */
+
+.user_picture{
+    width: 50%;
+    height: max-content;
+}
+
+/* css for footer */
+.footer_container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_sections{
+    width: 100%;
+}
 
 
 
