@@ -114,6 +114,7 @@ html{
     background-repeat: no-repeat;
     /* background-position-y: -100px; */
     background-blend-mode: saturation;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,6 +383,7 @@ html{
     /* width: 100%; */  /*never give width to video*/
     position: absolute;
 }
+
 .vid_overlay{
     width: 100%;
     height: 630px;
